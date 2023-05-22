@@ -1,0 +1,253 @@
+#topnavo {
+  padding: 10px;
+}
+#topnavo a {
+  color: #a3a3a3;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.navbar {
+  background-color: rgb(240, 240, 240);
+  margin-top: 20px;
+  height: 70px;
+}
+
+.navbar-brand img {
+  width: 60px;
+  height: 60px;
+}
+.navbar-brand a {
+  text-decoration: none;
+  color: rgb(253, 39, 24);
+  margin-left: 30px;
+  font-weight: 600;
+}
+.nav {
+  color: rgb(146, 141, 141);
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: 600;
+  padding: 10px;
+  font-size: 18px;
+  transition: all;
+}
+.nav:hover {
+  border-radius: 5px;
+  padding-left: 5px;
+  color: rgb(112, 112, 112);
+  background-color: rgb(211, 211, 211);
+}
+h2 {
+  color: rgb(241, 20, 20);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+h3 {
+  color: rgb(0, 0, 0);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  margin-top: 20px;
+}
+
+.brand-info h1 {
+  color: rgb(255, 255, 255);
+  margin-top: 50px;
+}
+
+.footer-content {
+  margin-top: 40px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 200;
+
+
+
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 280px;
+  box-shadow: 0px 8px 161px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 280px;
+  border-radius: 20px;
+  height: 230px;
+  perspective: 1000px;
+}
+#text {
+  animation: text 1s ease-in-out;
+}
+@keyframes text {
+  0% {
+    transform: translateY(200%);
+  }
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  border-radius: 20px;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 20px;
+}
+
+.flip-card-back {
+  background-color: #e2e2e2;
+  color: white;
+  transform: rotateY(180deg);
+}
+#chess {
+  height: 420px;
+  background-color: rgba(255, 0, 0, 0.897);
+  margin-top: 50px;
+}
+#readmore {
+  background-color: rgb(199, 199, 199);
+  color: rgb(243, 237, 237);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+#readmore:hover {
+  background-color: rgb(185, 184, 184);
+  color: rgb(243, 237, 237);
+}
+p {
+  color: white;
+  float: left;
+  margin-left: 40px;
+}
+#read {
+  background-color: rgb(199, 199, 199);
+  color: #666;
+  border: none;
+  padding: 14px 80px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 5px 0 #cfcfcf;
+
+}
+#read:hover {
+  background-color: rgb(185, 184, 184);;
+  color: #666;
+  border: none;
+  box-shadow: none;
+  transition: 1s;
+}
+#read a{
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+
+}
+#small{
+  float: right;
+   height: 320px;
+    margin-right: 40px; 
+    margin-top: 40px;
+}
+/* @media screen and (max-width: 992px) {
+#small {
+   height: 150px;
+  }
+  #smallp{
+    font-size:10px;
+  }
+  #readmore {
+    background-color: rgb(199, 199, 199);
+    color: rgb(243, 237, 237);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+} */
+
+/* On screens that are 600px or less, set the background color to olive */
+/* @media screen and (max-width: 600px) {
+  #small {
+  height: 100px;
+  }
+  #smallp{
+    font-size: 7px;
+  }
+ 
+  #readmore {
+    background-color: rgb(199, 199, 199);
+    color: rgb(243, 237, 237);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-left: 40px;
+  }
+} */
+h3{
+  color: white;
+}
+
+#bottom{
+  color: rgb(255, 115, 0);
+  margin-top: 30px;
+  margin-left:100px ;
+}
+#bottom:hover{
+  color: rgb(2, 44, 122);
+}
